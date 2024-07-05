@@ -1,0 +1,54 @@
+@import '../../../styles/variaveis';
+
+.card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-height: 80%;
+  /* Defina uma altura máxima para evitar que o card ocupe toda a tela */
+  overflow-y: auto;
+  /* Adiciona uma barra de rolagem se a altura ultrapassar o máximo */
+  padding: 2%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background: rgba(56, 112, 129, 0.904);
+  border-radius: 25px;
+
+  .tableDadosAtividade {
+    font-weight: bold;
+
+    span{
+      color: $destaque;
+    }
+  }
+
+  .tableArquivo {
+    width: 100%;
+    border-collapse: collapse;
+
+    /* Estilos para as células de cabeçalho */
+    th {
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Estilos para as células de dados */
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  .containerBtts{
+    display: flex;
+    justify-content: space-around;
+  }
+}

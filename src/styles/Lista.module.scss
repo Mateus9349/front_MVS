@@ -1,0 +1,84 @@
+@import './variaveis';
+
+.container{
+    display: flex;
+
+    .containerDadosAtividade{
+        margin: 50px auto;
+        background-color: $realce;
+        border-radius: 26px;
+        padding: 20px;
+        min-width: 40vw;
+    
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: bold;
+            color: $text;
+            border-radius: 5px;
+    
+            label{
+                font-weight: bold;
+            }
+    
+            input, select{
+                width: 50%;
+                border-radius: 15px;
+            }
+    
+            .data{
+                width: 28%;
+            }
+        }
+    }
+
+    .containerArquivo{
+        margin: 50px auto;
+        border-radius: 26px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: $text;
+
+        .divArquivo{
+            display: flex;
+            justify-content: space-between;
+
+            .labelArquivo{
+                font-weight: bold;
+            }
+
+            .inputArquivo{
+                color: $destaque;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            /* Estilos para as células de cabeçalho */
+            th {
+                background-color: #f2f2f2;
+                color: #333;
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            
+            /* Estilos para as células de dados */
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+            }
+            
+            /* Estilos para as linhas alternadas */
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+        }
+    }
+}
+

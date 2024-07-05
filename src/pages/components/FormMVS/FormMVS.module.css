@@ -1,0 +1,21 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    gap: 20px;
+}
+
+.secao{
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 50%;
+}
+
+.campoInput{
+    max-width: 20%;
+}
+
+.secao select{
+    max-width: 20%;
+}

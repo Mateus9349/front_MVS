@@ -1,0 +1,12 @@
+.secao{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.campoInput{
+    max-width: 20%;
+}
+
+.secao select{
+    max-width: 20%;
+}

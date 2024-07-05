@@ -1,0 +1,30 @@
+@import '../../../styles/variaveis';
+
+.true{
+    color: $destaque;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 25px;
+    background: $main;
+    min-width: 10%;
+    max-width: 50%;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.false{
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 25px;
+    background: rgb(74, 158, 109);
+    max-width: 50%;
+
+    &:hover{
+        cursor: pointer;
+    }
+}

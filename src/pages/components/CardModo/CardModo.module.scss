@@ -1,0 +1,14 @@
+@import '../../../styles/variaveis';
+
+.container{
+    background-color: rgb(143, 140, 137);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+
+    .title{
+        font-weight: bold;
+        font-size: 20px;
+    }
+}

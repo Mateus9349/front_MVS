@@ -1,0 +1,18 @@
+.container{
+    margin-top: 40px;
+
+    form {
+        min-width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+        .div_filtro{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 40%;
+        }
+    }
+}

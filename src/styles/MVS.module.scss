@@ -1,0 +1,57 @@
+@import './variaveis';
+
+.container {
+    .lerDados {
+        margin: 50px auto;
+        border-radius: 26px;
+        padding: 20px;
+        text-align: center;
+        color: $text;
+
+        label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input[type=file] {
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            filter: alpha(opacity=0);
+            color: $destaque;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 30vw;
+        gap: 25px;
+    }
+
+    .tabela {
+        overflow-x: auto;
+        width: 100%;
+        border-collapse: collapse;
+        color: $text;
+
+        th,
+        td {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid $main;
+        }
+
+        th {
+            background-color: $destaque;
+        }
+    }
+
+}

@@ -1,0 +1,51 @@
+@import '../../../styles/variaveis';
+
+.container {
+    .card {
+        margin: 25px;
+        background-color: $realce;
+        border-radius: 25px;
+        padding: 10px;
+        display: grid;
+        grid-template-areas:
+            "acao associacao btns"
+            "projeto data btns"
+        ;
+        grid-template-columns: 1fr 1fr minmax(5px, 0.5fr);
+
+        .acao {
+            grid-area: acao;
+            span{
+                color: $main;
+            }
+        }
+
+        .projeto {
+            grid-area: projeto;
+            span{
+                color: $main;
+            }
+        }
+
+        .associacao {
+            grid-area: associacao;
+            span{
+                color: $main;
+            }
+        }
+
+        .data{
+            grid-area: data;
+            span{
+                color: $main;
+            }
+        }
+
+        .btns {
+            grid-area: btns;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+}
